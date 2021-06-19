@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+form-tagu qe deginon formen,action-atributi qe cakton
+fajllin icili thirret pasi te ekzekutohet forma,
+method-metoda e cila mundeson kalimin e shenimeve ne pjesen e serverit.
+id-atributi i cili zakonisht perdoret per te lexuar vlerat me javascript
+ose perdoret per ti dhen nje stil te veqant me css
+
+    -->
+    <form action="#"method="" style="width:500px">
+        <legend>Forma per regjisrimin e studentit</legend>
+        <fieldset>
+            <legend>Detajet e studentit</legend>
+            <label for="">Emri:</label><br>
+            <input type="text"name="emri" id="emri"><br>
+            <label for="">Mbiemri:</label><br>
+            <input type="text"name="mbiemri" id="mbiemri"><br>
+            <label for="">Gjinia:</label><br>
+            <input type="radio"name="gjinia" value="Male">Male<br>
+            <input type="radio"name="gjinia" value="Female">Female<br>
+            <label for="">Email:</label><br>
+            <input type="email"name="email" id="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Detajet e trajnimit</legend>
+            <select name="trajnimi" id="trajnimi">
+                <option value="0">Zgjedh Trajnimin</option>
+                <option value="1">Java Fundamentals</option>
+                <option value="2">C# Fundamentals</option>
+                <option value="3">Web Development</option>
+                <option value="4">CCNA</option>
+                <option value="5">DATA Scientist</option>
+            </select><br>
+            <label for="">Orari:</label><br>
+            <input type="checkbox" name="orari" value="paradite" checked>Paradite<br>
+            <input type="checkbox" name="orari" value="pasdite">Pasdite<br>
+            <label for="">Data e aplikimit:</label><br>
+            <input type="date" name="dataeaplikimit"><br>
+            <label for="">Komente:</label><br>
+            <textarea name="komente" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Addition Informations</legend>
+            <label for="">Vlersimi:</label><br>
+            <input type="range" name="range" id="range" min="1" max="100" value="50">
+        </fieldset>
+        <input type="submit" value="apliko">
+        <input type="reset" value="Fshij">
+    </form>
+    <br><br><br><br><br>
+    <h1>Simple registraition</h1>
+    <form action="" style="width:200px">
+        <fieldset>
+            <img src="" width="200px" height="200px"><br>
+            <label for="">Email:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="">Password:</label><br>
+            <input type="password" name="password" id="password"><br><br>
+            <input type="submit" value="Log in">
+            <input type="submit"value="Register">
+        </fieldset>
+        
+    </form>
+    <br><br><br><br><br>
+
+    <form action="" style="width:500px;text-align: center;">
+    <fieldset>
+        <legend style="color:red;">Personal Details</legend><br><br>
+        Name: <input type="text" name="name"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        E-mail id: <input type="email" name="email"><br><br>
+        Gender: <input type="radio" name="gjinia">Male <input type="radio" name="gjinia">Female <br><br>
+        Contact: <input type="text" name="contact"><br><br>
+        <legend style="color:red;">Educational Qualification</legend><br><br>
+        Degree:
+        <select>
+            <option value="0">Select Group</option>
+            <option value="1">Select Group</option>
+            <option value="2">Select Group</option>
+        </select><br><br>
+        Engineering: <select>
+            <option value="0">Select Group</option>
+            <option value="1">Select Group</option>
+            <option value="2">Select Group</option>
+        </select><br><br>
+        Hobbies: <input type="checkbox" name="Hobbies">PLaying cards
+        <input type="checkbox" name="Hobbies">PLaying cards
+        <input type="checkbox" name="Hobbies">PLaying cards<br><br>
+        <legend style="color:red;">Adress</legend><br><br>
+        <textarea name="adresa" id="" cols="30" rows="10"></textarea><br><br>
+        Attch Resume: <input type="file" value="Choose File" name="file"><br><br>
+        <input type="submit" value="SUBMIT">
+</fieldset>
+    </form>
+</body>
+</html>
